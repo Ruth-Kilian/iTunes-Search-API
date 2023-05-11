@@ -17,7 +17,7 @@ function SearchForm({ setSearchResults }) {
   const handleSearch = async () => {
     try {
       const response = await fetch(
-        `/search?term=${searchTerm}&limit=${limit}&entity=${entity}`
+        `http://localhost:8080/search?term=${searchTerm}&limit=${limit}&entity=${entity}`
       );
       const data = await response.json();
       setSearchResults(data.results);
