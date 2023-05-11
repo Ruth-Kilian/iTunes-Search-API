@@ -17,7 +17,7 @@ function SearchForm({ setSearchResults }) {
   const handleSearch = async () => {
     try {
       const response = await fetch(
-        `http://localhost:8080/search?term=${searchTerm}&limit=${limit}&entity=${entity}`
+        `https://itunes-search-api.onrender.com/search?term=${searchTerm}&limit=${limit}&entity=${entity}`
       );
       const data = await response.json();
       setSearchResults(data.results);
