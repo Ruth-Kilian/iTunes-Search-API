@@ -16,6 +16,7 @@ function SearchForm({ setSearchResults }) {
   // sends a GET request to API using async/await fetch function
   const handleSearch = async () => {
     try {
+      // The fetch needs to send a request to the new deployed URL instead of the localhost URL
       const response = await fetch(
         `https://itunes-search-api.onrender.com/search?term=${searchTerm}&limit=${limit}&entity=${entity}`
       );
