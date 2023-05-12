@@ -22,7 +22,7 @@ https://github.com/Ruth-Kilian/iTunes-Search-API
 
 # Deployed Website
 
-Heroku is no longer free and Github Pages will not execute any serverside code. It can only upload static files.
+https://itunes-search-api.onrender.com/
 
 # API Keys
 
